@@ -8,13 +8,14 @@
 
 body{
     background-color: black;
-    
 }
 
 .container{
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    width: 90vw;
+    margin-left: 10vw;
 }
 
 section{
@@ -51,6 +52,22 @@ nav{
     flex-direction: column;
     background: none;
     border: none;
+    position: absolute;
+    margin-left: 5vw;
+    transform: translate(-50%);
+}
+
+.btDarkMode{
+    position: absolute;
+    margin-left: 5vw;
+    transform: translate(-50%);
+    background: none;
+    border: none;
+    bottom: 5px;
+}
+
+.imglune{
+    width: 40px;
 }
 
 .bar{
