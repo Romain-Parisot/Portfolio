@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
+    font-family: monospace;
 }
 
 body{
@@ -10,12 +11,41 @@ body{
 }
 
 header{
-    background-color: white;
+    background-color: rgb(45, 15, 87);
     height: 100px;
     margin-top: 10px;
     width: calc(100vw - 40px);
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    box-shadow: 0px 0px 45px 17px rgba(45,15,87,1);
+    -webkit-box-shadow: 0px 0px 45px 17px rgba(45,15,87,1);
+    -moz-box-shadow: 0px 0px 45px 17px rgba(45,15,87,1);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+a:hover{
+    color: rgb(168, 168, 168);
 }
 
 section{
@@ -29,12 +59,16 @@ section{
     width: 50vw;
     margin-left: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .partD{
     width: 50vw;
     margin-right: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .partG > img{
@@ -47,4 +81,18 @@ section{
     width: 50%;
     height: 50%;
     
+}
+
+.IIM:hover{
+    color: orange;
+}
+
+.divlogoC{
+    display: flex;
+}
+
+.logoContact{
+    display: flex;
+    width: calc(100vW/3);
+    background-color: beige;
 }
