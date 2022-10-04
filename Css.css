@@ -8,6 +8,18 @@
 
 body{
     background-color: black;
+    
+}
+
+.container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: center;
 }
 
 header{
@@ -48,8 +60,9 @@ a:hover{
     color: rgb(168, 168, 168);
 }
 
-section{
-    height: 100vh;
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.1;
 }
 
 .Projet1 , .Projet2 {
@@ -89,10 +102,19 @@ section{
 
 .divlogoC{
     display: flex;
+    margin-top: 75vh;
 }
 
 .logoContact{
     display: flex;
     width: calc(100vW/3);
-    background-color: beige;
+    justify-content: center;
+}
+
+.img_logo{
+    width: 100px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.img_logo:hover{
+    transform: rotate(360deg) scale(1.4);
 }
