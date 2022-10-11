@@ -81,7 +81,7 @@ nav{
     transform: translate(-50%);
     background: none;
     border: none;
-    bottom: 5px;
+    bottom: 50px;
 }
 
 
@@ -211,7 +211,6 @@ header.animationHeader{
     transform: rotate(360deg) scale(1.4);
 }
 
-
 .TxtBotFooter{
     text-align: center;
     margin-top: 25px;
@@ -223,4 +222,25 @@ header.animationHeader{
     height: 100vh;
     position: absolute;
     border-right: solid 4px rgb(45, 15, 87) ;
+}
+
+.scrollRecap{
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+}
+
+.bullet{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+
+}
+
+.bullet1, .bullet2, .bullet3, .bullet4{
+    margin-top: 20px;
 }
