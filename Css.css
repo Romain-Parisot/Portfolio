@@ -185,6 +185,18 @@ header.animationHeader{
     margin-top: 75vh;
 }
 
+
+.barFooter{
+    width: 70vw;
+    height: 4px;
+    display: flex;
+    transform: translateY(70vh);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+    background-color: rgb(45, 15, 87);
+}
+
 .logoContact{
     display: flex;
     width: calc(100vW/3);
@@ -197,6 +209,12 @@ header.animationHeader{
 }
 .img_logo:hover{
     transform: rotate(360deg) scale(1.4);
+}
+
+
+.TxtBotFooter{
+    text-align: center;
+    margin-top: 25px;
 }
 
 .sidebar{
