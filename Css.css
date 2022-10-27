@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: black;
+    background-image: url(back.gif);
 }
 
 .container{
@@ -25,16 +25,16 @@ section{
 }
 
 header{
-    background-color: rgb(45, 15, 87);
-    height: 80vh;
+    background-color: rgb(212, 139, 27 );
+    height: 60vh;
     width: 15vw;
     display: flex;
     margin-left: 2.5vw;
     margin-right: 2.5vw;
     margin-top: 5vw;
-    box-shadow: 0px 0px 45px 17px rgba(45,15,87,1);
-    -webkit-box-shadow: 0px 0px 45px 17px rgba(45,15,87,1);
-    -moz-box-shadow: 0px 0px 45px 17px rgba(45,15,87,1);
+    box-shadow: 0px 0px 45px 17px rgba(212, 139, 27 );
+    -webkit-box-shadow: 0px 0px 45px 17px rgba(212, 139, 27 );
+    -moz-box-shadow: 0px 0px 45px 17px rgba(212, 139, 27 );
     transition: 0.4s ease;
     transform: translateX(-400px);
 }
@@ -85,14 +85,14 @@ nav{
 }
 
 
-.imglune{
+#imglune{
     width: 30px;
 }
 
 .bar{
     width: 45px;
     height: 4px;
-    background-color: rgb(45, 15, 87);
+    background-color: rgb(212, 139, 27 );
     margin-top: 9px;
 }
 
@@ -145,36 +145,6 @@ header.animationHeader{
     transform: translateX(0);
 }
 
-.Projet1 , .Projet2 {
-    display: flex;
-}
-.partG{
-    width: 50vw;
-    margin-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.partD{
-    width: 50vw;
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.partG > img{
-    width: 50%;
-    height: 50%;
-    
-}
-
-.partD > img{
-    width: 50%;
-    height: 50%;
-    
-}
 
 .IIM:hover{
     color: orange;
@@ -194,7 +164,7 @@ header.animationHeader{
     margin-left: auto;
     margin-right: auto;
     margin-top: 3px;
-    background-color: rgb(45, 15, 87);
+    background-color: rgb(212, 139, 27 );
 }
 
 .logoContact{
@@ -221,7 +191,7 @@ header.animationHeader{
     left: 0;
     height: 100vh;
     position: absolute;
-    border-right: solid 4px rgb(45, 15, 87) ;
+    border-right: solid 4px rgb(212, 139, 27 ) ;
 }
 
 .scrollRecap{
@@ -238,9 +208,88 @@ header.animationHeader{
     width: 20px;
     height: 20px;
     background-color: #fff;
+    border-radius: 20px;
 
 }
 
 .bullet1, .bullet2, .bullet3, .bullet4{
     margin-top: 20px;
+}
+
+
+/* -------------------------Projets----------------------------- */
+
+a.ensavoirplus{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    color:  rgb(212, 139, 27 );
+}
+
+.descriptionprojet{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.Projet1 , .Projet2 {
+    display: flex;
+    height: 45vh;
+}
+
+.voirplusprojet{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flecheblc{
+    display: flex;
+    width: 40px;
+}
+
+.partG{
+    width: 50vw;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.partD{
+    width: 50vw;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.partD:hover{
+    font-size: 15px;
+}
+.partG:hover{
+    font-size: 15px;
+}
+
+img.gifpres{
+    transform: scale(130%);
+    border-bottom: solid 4px rgb(212, 139, 27 ) ;
+}
+
+.partG > img{
+    width: 50%;
+    height: 50%;
+    
+}
+
+.partD > img{
+    width: 50%;
+    height: 50%;
+    
 }

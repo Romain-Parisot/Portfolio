@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css.css">
-    <title>Portfolio</title>
+    <meta name="description" content="Mon portfolio de presentation de mes projets, mes competences et moi meme. Je suis étudiant en coding j'ai donc développer ce site de présentation." >
+    <meta name="keywords" content="Portfolio, Présentation, Dévellopeur, Projets, IIM, Coding" > 
+    <meta name="author" content="Romain PARISOT">
+    <title>Portfolio - Romain PARISOT</title>
 </head>
 <body>
     <div class="sidebar">
@@ -21,7 +24,7 @@
             <span class="bullet bullet4"></span>
         </div>
         <button class="btDarkMode">
-            <img src="images/lune_blanc.png" alt="" class="imglune">
+            <img src="images/lune_blanc.png" alt="" id="imglune">
         </button>
         <header class="header">
             <nav>
@@ -48,21 +51,35 @@
         <section id="2">
             <div class="Projet1">
                 <div class="partG">
-                    <img src="https://picsum.photos/id/684/600" alt="">
+                    <img class="gifpres" src="Vid/Twitter_gif.gif" alt="gif de presentation d'une réplique de twitter">
                 </div>
                 <div class="partD">
-                    <h3>Titre du Projet</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum maiores modi delectus minima expedita?</p>
+                    <div>
+                        <h3>Réplique de twitter</h3>
+                    </div>
+                    <div>
+                        <p class="descriptionprojet">Le but de ce projet etait d'utiliser une base de donnée pour pouvoir ajouter, afficher et rechercher des tweets.</p>
+                        <a class="ensavoirplus" href="Projet.html">En savoir plus ...</a>
+                    </div>
                 </div>
             </div>
             <div class="Projet2">
                 <div class="partG">
-                    <h3>Titre du Projet</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsum maiores modi delectus minima expedita?</p>
+                    <div>
+                        <h3>VR EDU</h3>
+                    </div>
+                    <div>
+                        <p class="descriptionprojet">Ce projet avait pour but de réaliser un site qui presentait des casques de realité virtuelle pour l'enseignement</p>
+                        <a class="ensavoirplus" href="Projet.html">En savoir plus ...</a>
+                        
+                    </div>
                 </div>
                 <div class="partD">
-                    <img src="https://picsum.photos/id/684/600" alt="">
+                    <img  class="gifpres" src="Vid/vredu_gif.gif" alt="gif de presentation d'un site e-commerce/blog dans le domaine éducatif">
                 </div>
+            </div>
+            <div class="voirplusprojet">
+                <a href="Projet.html"><img class="flecheblc" src="images/fleche_blanche.png" alt=""></a>
             </div>
         </section id="3">
         <!-- Screen a propos -->
@@ -93,3 +110,4 @@
     <script src="js.js"></script>
 </body>
 </html>
+

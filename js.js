@@ -14,3 +14,25 @@ function toggleburger(){
     })
 }
 toggleburger();
+
+// ----------------------------------Dark Mode-------------------------------
+
+// recupere l'image et son src
+let imgdarkmode=document.querySelector('#imglune')
+let srcdarkmode=imgdarkmode.getAttribute("src")
+
+
+function DarkMode(){
+    if(srcdarkmode=="images/lune_blanc.png"){
+        srcdarkmode="images/lune_noir.png"
+        imgdarkmode.setAttribute('src', srcdarkmode)
+    }
+    else{
+        srcdarkmode="images/lune_blanc.png"
+        imgdarkmode.setAttribute('src', srcdarkmode)
+    }
+
+}
+imgdarkmode.addEventListener('click',DarkMode)       
+
+// --------------------couper bg------------------------
