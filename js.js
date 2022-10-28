@@ -36,3 +36,4 @@ function DarkMode(){
 imgdarkmode.addEventListener('click',DarkMode)       
 
 // --------------------couper bg------------------------
+

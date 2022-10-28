@@ -37,6 +37,7 @@ header{
     -moz-box-shadow: 0px 0px 45px 17px rgba(212, 139, 27 );
     transition: 0.4s ease;
     transform: translateX(-400px);
+
 }
 
 .none{
@@ -293,3 +294,15 @@ img.gifpres{
     height: 50%;
     
 }
+
+/* -----------------------------------contact------------------------------ */
+
+h2.txtcontact{
+    display: flex;
+    justify-content: center;
+    transform: translateY(150px);
+}
+
+
+
+/* ---------------------------page projets------------------------------- */
