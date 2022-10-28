@@ -10,6 +10,7 @@ I was challenged to do a responsive portfolio and to not used templates, with a 
 - Vercel (to publish my website)
 - ImgBot (for the optimization of my images)
 - Zapier (to connect GitHub to Discord)
+-	Socket Security(improve security)
 
 ## Deployment
 I connect vercel to my git and i liked this repository to publish my portfolio that you can find here : https://portfolio-seven-rho-57.vercel.app/
