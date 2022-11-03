@@ -36,7 +36,8 @@ body{
 }
 
 .imgacc{
-
+    border-radius: 200px;
+    width: 500px;
 }
 
 section{
