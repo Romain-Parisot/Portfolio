@@ -311,8 +311,7 @@ img.gifpres{
 }
 
 .partD > img{
-    width: 50%;
-    height: 50%;
+    width: 30%;
     
 }
 
@@ -327,3 +326,26 @@ h2.txtcontact{
 
 
 /* ---------------------------page projets------------------------------- */
+
+.titleprojet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-bottom: solid 2px rgb(212, 139, 27 ) ;
+}
+.vredu{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.gifvredu{
+    margin-bottom: 100px;
+    margin-top: 50px;
+    border-bottom: solid 4px rgb(212, 139, 27 ) ;
+}
+.divgif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
