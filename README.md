@@ -13,7 +13,7 @@ I was challenged to do a responsive portfolio and to not used templates, with a 
 -	Socket Security(improve security)
 
 ## Deployment
-I connect vercel to my git and i liked this repository to publish my portfolio that you can find here : https://portfolio-seven-rho-57.vercel.app/
+I connect vercel to my git and i liked this repository to publish my portfolio that you can find here : http://portfolio-romain-parisot.tk/
 <br>
 I also liked checkly to my versel to do test and optimize the loading of my page
 
