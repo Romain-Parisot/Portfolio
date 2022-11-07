@@ -10,6 +10,15 @@
     <meta name="author" content="Romain PARISOT">
     <link rel="icon" type="image/x-icon" href="images/photo_profil_detoure2.png">
     <title>Portfolio - Projets - Contact - Romain PARISOT</title>
+    <script type = "application/ld+json" > 
+        {
+          "@context": "http://schema.org/",
+          "@type": "Person",
+          "name": "Romain PARISOT",
+          "url": "https://www.portfolio-romain-parisot.tk/",
+          "description": "Porfolio de Romain PARISOT"
+         }
+        </script>
 </head>
 <body>
     <div class="sidebar">
@@ -18,12 +27,6 @@
             <span class="bar bar_mid"></span>
             <span class="bar bar_down"></span>
         </button>
-        <div class="scrollRecap">
-            <span class="bullet bullet1"></span>
-            <span class="bullet bullet2"></span>
-            <span class="bullet bullet3"></span>
-            <span class="bullet bullet4"></span>
-        </div>
         <button class="btDarkMode">
             <img src="images/lune_blanc.png" alt="image to active/desactive dark mode" id="imglune" width="30" height="30">
         </button>
@@ -32,7 +35,7 @@
                 <ul class="ulNavBar">
                     <li><a href="Projet.html">Projets</a></li>
                     <li class="linav"><a href="">Home</a></li>
-                    <li class="linav"><a href="">Compétences</a></li>
+                    
                 </ul>  
             </nav>
         </header>
@@ -41,10 +44,10 @@
     <div class="container">
         <section id="first">
             <div class="txtacc">
-                <h1>Bienvenue sur mon Portfolio, Vous allez decouvrir mes Projets, </h1>
+                <h1 class="txt1main">Bienvenue sur mon Portfolio, Vous allez decouvrir mes Projets, </h1>
                 <br>
                 <div>
-                    <h2>Je suis étudiant dans l'axe Coding a <strong class="IIM">IIM</strong></h2>
+                    <h2 class="txt2main">Je suis étudiant dans l'axe Coding a <strong class="IIM">IIM</strong></h2>
                 </div>
             </div>
             <div class="divD">
@@ -54,31 +57,31 @@
         <!-- Screen projet -->
         <section id="second">
             <div class="Projet1">
-                <div class="partG">
+                <div class="partG reveal">
                     <img class="gifpres" src="images/img_twitter.PNG" alt="gif de presentation d'une réplique de twitter" width="400" height="180">
                 </div>
-                <div class="partD">
+                <div class="partD reveal">
                     <div>
-                        <h3>Réplique de twitter</h3>
+                        <h3 class="reveal">Réplique de twitter</h3>
                     </div>
                     <div>
-                        <p class="descriptionprojet">Le but de ce projet etait d'utiliser une base de donnée pour pouvoir ajouter, afficher et rechercher des tweets.</p>
-                        <a class="ensavoirplus" href="Projet.html">En savoir plus ...</a>
+                        <p class="descriptionprojet reveal">Le but de ce projet etait d'utiliser une base de donnée pour pouvoir ajouter, afficher et rechercher des tweets.</p>
+                        <a class="ensavoirplus reveal" href="Projet.html">En savoir plus ...</a>
                     </div>
                 </div>
             </div>
             <div class="Projet2">
-                <div class="partG">
+                <div class="partG reveal">
                     <div>
                         <h3>VR EDU</h3>
                     </div>
                     <div>
-                        <p class="descriptionprojet">Ce projet avait pour but de réaliser un site qui presentait des casques de realité virtuelle pour l'enseignement</p>
-                        <a class="ensavoirplus" href="Projet.html">En savoir plus ...</a>
+                        <p class="descriptionprojet reveal">Ce projet avait pour but de réaliser un site qui presentait des casques de realité virtuelle pour l'enseignement</p>
+                        <a class="ensavoirplus reveal" href="Projet.html">En savoir plus ...</a>
                         
                     </div>
                 </div>
-                <div class="partD">
+                <div class="partD reveal">
                     <img  class="gifpres" src="images/page_vr_edu.PNG" alt="gif de presentation d'un site e-commerce/blog dans le domaine éducatif" height="340" width="230">
                 </div>
             </div>
@@ -87,23 +90,32 @@
             </div>
         </section id="three">
         <!-- Screen a propos -->
-        <section>
-            <h2> A propos</h2>
+        <section class="apropos">
+            <div class="divtxtaprp">
+                <p class="reveal txtaprp">Je m'appelle Romain PARISOT, je suis étudiant en deuxieme année au <a class="aprplien" href="https://www.iim.fr/"> Pole Leonard de Vinci, IIM Paris la défense</a>.</p>
+                <p class="reveal txtaprp">Je suis dans l'axe <a class="aprplien" href="https://www.iim.fr/axes-metiers/coding-digital-innovation/">Coding Digital Innovation</a></p>
+                <p class="reveal txtaprp">Pour le moment je pense m'orienter vers le metier de développer FullStack avec une prédominence en BackEnd.</p>
+                <p class="reveal txtaprp">Dans la vie je suis passionné de sport : Musculation, Rugby, Sport de combats ...</p>
+                <p class="reveal txtaprp">J'adore le challenge et la possibilité de me confronté a de nouveaux defis. </p>
+            </div>
+            
+            <img class="imgaprp" src="images/a_prp.png" alt="image de Romain Parisot">
+
         </section>
         <!-- Screen contact -->
         <section id="four">
-            <h2 class="txtcontact">N'hesitez pas a me contacter si vous avez une question</h2>
+            <h2 class="txtcontact reveal">N'hesitez pas a me contacter si vous avez une question</h2>
             
             <span class="barFooter"></span>
             <div class="divlogoC">
-                <div class="logoContact">
-                    <img src="images/linkedin_version_blanche.png" alt="Logo de Linkedin" id="img_logo_linkedin" class="img_logo" width="100" height="55">
+                <div class="logoContact reveal">
+                    <a href="https://www.linkedin.com/feed/"><img src="images/linkedin_version_blanche.png" alt="Logo de Linkedin" id="img_logo_linkedin" class="img_logo" width="100" height="55"></a>
                 </div>
-                <div class="logoContact">
-                    <img src="images/git_version_blanche_2.png" alt="Logo de GitHub" id="img_logo_git" class="img_logo" width="100" height="55">
+                <div class="logoContact reveal">
+                    <a href="https://github.com/Romain-Parisot"><img src="images/git_version_blanche_2.png" alt="Logo de GitHub" id="img_logo_git" class="img_logo" width="100" height="55"></a>
                 </div>
-                <div class="logoContact">
-                    <img src="images/mail_version_blanche.png" alt="Logo de mail" id="img_logo_mail" class="img_logo" width="100" height="55">
+                <div class="logoContact reveal">
+                    <a href="mailto:romainparisot.pro@gmail.com"><img src="images/mail_version_blanche.png" alt="Logo de mail" id="img_logo_mail" class="img_logo" width="100" height="55"></a>
                 </div>
             </div>
             <div>
@@ -112,6 +124,7 @@
         </section>
     </div>
     <script src="js.js"></script>
+    <script src="js2.js"></script>
 </body>
 </html>
 

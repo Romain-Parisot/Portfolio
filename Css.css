@@ -38,6 +38,47 @@ body{
 .imgacc{
     border-radius: 200px;
     width: 500px;
+    animation: apparitionright 1s ease-out;
+}
+
+@keyframes apparitionright {
+    from{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+.txt1main{
+    animation: apparitiontop 1s ease-out;
+}
+@keyframes apparitiontop {
+    from{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+.txt2main{
+    animation: apparitionbot 1s ease-out;
+}
+@keyframes apparitionbot {
+    from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
 }
 
 section{
@@ -89,9 +130,6 @@ nav{
     margin-top: 20px;
 }
 
-.burger:hover{
-    
-}
 
 .burger:hover .bar{
     background-color: #fff;
@@ -293,13 +331,6 @@ a.ensavoirplus{
     gap: 30px;
 }
 
-.partD:hover{
-    font-size: 15px;
-}
-.partG:hover{
-    font-size: 15px;
-}
-
 img.gifpres{
     transform: scale(130%);
     border-bottom: solid 4px rgb(212, 139, 27 ) ;
@@ -315,13 +346,37 @@ img.gifpres{
     width: 30%;
     
 }
+/* -------------a propos ----------------- */
+.apropos{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.txtaprp{
+    margin-bottom: 20px;
+}
+.divtxtaprp{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.aprplien{
+    color: rgb(212, 139, 27 );
+}
+.imgaprp{
+    width: 300px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 
 /* -----------------------------------contact------------------------------ */
 
 h2.txtcontact{
     display: flex;
     justify-content: center;
-    transform: translateY(150px);
+    transform: translateY(30vh);
+    text-align: center;
 }
 
 
@@ -366,4 +421,86 @@ h2.txtcontact{
     display: flex;
     justify-content: right;
     margin-right: 5px;
+}
+
+/* ------------------animation-------------------- */
+
+
+.reveal-visible{
+    opacity: 1;
+    transform: translate(0);
+    transition: 1.5s;
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+/* ------------responsive-------------- */
+
+@media screen and (max-width: 1000px)
+{
+    .ulNavBar{
+        flex-direction: row;
+        width: 60vw;
+    }
+    header{
+        width: 70vw;
+        height: 10vh;
+        margin-top: 10px;
+        transform: translateX(-250%);
+        justify-content: space-around;
+        display: flex;
+        align-items: center;
+    }
+    header.animationHeader{
+        transform: translateX(25%);
+    }
+    .linav{
+        margin-top: 0px;
+    }
+    #first{
+        flex-direction: column;
+    }
+    .imgacc{
+        width: 250px;
+        height: 333px;
+    }
+    #second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .Projet1{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Projet2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .gifpres{
+        display: none;
+    }
+    .divtxtaprp{
+        font-size: 20px;
+    }
+    .apropos{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .aprplien{
+        font-size: 20px;
+    }
+    .imgaprp{
+        width: 100px;
+    }
+    .gif{
+        width: 80vw;
+    }
+
 }
