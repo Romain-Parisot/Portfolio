@@ -183,7 +183,7 @@ ul{
 }
 
 .linav{
-    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 a{
@@ -399,6 +399,8 @@ h2.txtcontact{
     margin-bottom: 100px;
     margin-top: 50px;
     border-bottom: solid 4px rgb(212, 139, 27 ) ;
+    width: 700px;
+    height: 350px;
 }
 .divgif{
     display: flex;
