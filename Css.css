@@ -346,6 +346,10 @@ img.gifpres{
     width: 30%;
     
 }
+
+.importanttxt{
+    color: rgb(212, 139, 27 );
+}
 /* -------------a propos ----------------- */
 .apropos{
     font-size: 20px;
