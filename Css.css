@@ -82,7 +82,7 @@ body{
 }
 
 section{
-    height: 100vh;
+    height: 120vh;
     scroll-snap-align: center;
 }
 
@@ -424,6 +424,7 @@ h2.txtcontact{
     justify-content: right;
     margin-right: 5px;
 }
+
 
 /* ------------------animation-------------------- */
 
