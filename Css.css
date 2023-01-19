@@ -347,6 +347,12 @@ img.gifpres{
     
 }
 
+.link_to_project{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
 .importanttxt{
     color: rgb(212, 139, 27 );
 }
