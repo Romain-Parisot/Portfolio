@@ -54,6 +54,7 @@ body{
 }
 .txt1main{
     animation: apparitiontop 1s ease-out;
+    padding: 10px;
 }
 @keyframes apparitiontop {
     from{
@@ -147,6 +148,11 @@ nav{
 
 #imglune{
     width: 30px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#imglune:hover{
+    transform: rotate(-30deg);
 }
 
 .bar{
@@ -339,7 +345,6 @@ img.gifpres{
 .partG > img{
     width: 50%;
     height: 50%;
-    
 }
 
 .partD > img{
@@ -388,6 +393,30 @@ h2.txtcontact{
     text-align: center;
 }
 
+.btcv{
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    color: black;
+}
+
+.divbtcv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(480px);
+}
+
+.alternance{
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+}
+
+.alternancebody{
+    height: 100vh;
+}
 
 
 /* ---------------------------page projets------------------------------- */
