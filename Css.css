@@ -29,6 +29,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 10vh;
+    margin-bottom: 20vh;
 }
 
 .txtacc{
@@ -83,7 +85,6 @@ body{
 }
 
 section{
-    height: 120vh;
     scroll-snap-align: center;
 }
 
@@ -367,6 +368,8 @@ img.gifpres{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 20vh;
+    padding-bottom: 10vh;
 }
 .txtaprp{
     margin-bottom: 20px;
@@ -386,6 +389,10 @@ img.gifpres{
 
 /* -----------------------------------contact------------------------------ */
 
+#four{
+    padding-bottom: 10vh;
+}
+
 h2.txtcontact{
     display: flex;
     justify-content: center;
@@ -396,7 +403,15 @@ h2.txtcontact{
 .btcv{
     width: 300px;
     height: 100px;
-    background-color: #fff;
+    background-color: black;
+    color: rgb(212, 139, 27 );
+    font-size: 24px;
+    transition: 0.5s;
+}
+
+.btcv:hover{
+    cursor: pointer;
+    background-color: rgb(212, 139, 27 );
     color: black;
 }
 
@@ -417,6 +432,7 @@ h2.txtcontact{
 .alternancebody{
     height: 100vh;
 }
+
 
 
 /* ---------------------------page projets------------------------------- */
