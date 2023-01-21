@@ -8,6 +8,7 @@
 
 body{
     background-color: black;
+    overflow: hidden;
 }
 .bodybc{
     background-color: white;
@@ -260,6 +261,34 @@ header.animationHeader{
     height: 100vh;
     position: absolute;
     border-right: solid 4px rgb(212, 139, 27 ) ;
+}
+
+.divtxtanimsidebar{
+    display: flex;
+    width: 100%;
+    position: absolute;
+    transform: rotate(270deg) translate(-100vw, -32vw);
+    left: 0;
+}
+
+.divtxtanimsidebar2{
+    transform: rotate(90deg) translateY(28vw);
+}
+
+.txtanimsidebar{
+    white-space: nowrap;
+    color: rgb(212, 139, 27 );
+    font-size: 25px;
+    animation: scrolltxt 15s linear infinite;
+}
+
+@keyframes scrolltxt {
+    0%{
+        transform: translate(-100%, 0);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
 }
 
 .scrollRecap{
