@@ -122,6 +122,7 @@ nav{
     flex-direction: column;
     align-items: center;
     width: 15vw;
+    font-size: 24px;
 }
 
 .burger{
@@ -198,7 +199,6 @@ ul{
 
 a{
     text-decoration: none;
-    font-size: 25px;
     color: white;
 }
 
@@ -218,15 +218,19 @@ header.animationHeader{
 
 .divlogoC{
     display: flex;
-    margin-top: 75vh;
+    /* margin-top: 75vh; */
 }
 
+footer{
+    margin-bottom: 5vh;
+}
 
 .barFooter{
     width: 70vw;
     height: 4px;
     display: flex;
-    transform: translateY(70vh);
+    /* transform: translateY(70vh); */
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3px;
@@ -251,6 +255,23 @@ header.animationHeader{
 .TxtBotFooter{
     text-align: center;
     margin-top: 25px;
+}
+.aTxtBotFooter{
+    display: inline-block;
+}
+
+
+.aTxtBotFooter:after {
+	content: '';
+	width: 0px;
+	height: 1px;
+	display: block;
+	background: rgb(212, 139, 27 );
+	transition: 300ms;
+}
+
+.aTxtBotFooter:hover:after {
+	width: 100%;
 }
 
 .sidebar{
@@ -314,12 +335,33 @@ header.animationHeader{
 
 /* -------------------------Projets----------------------------- */
 
-a.ensavoirplus{
+.divensavoirplus{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+a.ensavoirplus{
+    display: inline-block;
     justify-content: center;
     text-align: center;
     font-size: 15px;
     color:  rgb(212, 139, 27 );
+}
+
+a.ensavoirplus:after {
+	content: '';
+	width: 0px;
+	height: 1px;
+	display: block;
+	background: rgb(212, 139, 27 );
+	transition: 300ms;
+}
+
+a.ensavoirplus:hover:after {
+	width: 100%;
 }
 
 .descriptionprojet{
@@ -344,6 +386,11 @@ a.ensavoirplus{
 .flecheblc{
     display: flex;
     width: 40px;
+    transition: 0.2s;
+}
+
+.flecheblc:hover{
+    transform: rotate(-90deg) scale(120%);
 }
 
 .partG{
@@ -407,6 +454,20 @@ img.gifpres{
 }
 .aprplien{
     color: rgb(212, 139, 27 );
+    display: inline-block;
+}
+
+.aprplien:after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: rgb(212, 139, 27 );
+    transition: 300ms;
+}
+
+.aprplien:hover:after {
+    width: 100%;
 }
 
 .imgaprp{
@@ -417,24 +478,22 @@ img.gifpres{
 
 /* -----------------------------------contact------------------------------ */
 
-#four{
-    padding-bottom: 10vh;
-}
-
 h2.txtcontact{
     display: flex;
     justify-content: center;
-    transform: translateY(30vh);
+    /* transform: translateY(30vh); */
     text-align: center;
 }
 
 .btcv{
     width: 300px;
     height: 100px;
-    background-color: black;
+    background: none;
+    border: 2px solid rgb(212, 139, 27 );
     color: rgb(212, 139, 27 );
     font-size: 24px;
-    transition: 0.5s;
+    transition: 0.5s linear;
+    position: relative;
 }
 
 .btcv:hover{
@@ -443,11 +502,37 @@ h2.txtcontact{
     color: black;
 }
 
+.btcv::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(212, 139, 27 );
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btstage::before{
+    transform: scaleX(0);
+}
+.btalternance::before{
+    transform: scaleX(0);
+}
+.btstage:hover::before{
+    transform: scaleX(1);
+}
+.btalternance:hover::before{
+    transform: scaleX(1);
+}
+
 .divbtcv{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    transform: translateY(480px);
+    padding: 100px;
 }
 
 .alternance{
@@ -512,7 +597,7 @@ h2.txtcontact{
 }
 
 
-/* ------------------animation-------------------- */
+/* ------------------animation apparition-------------------- */
 
 
 .reveal-visible{

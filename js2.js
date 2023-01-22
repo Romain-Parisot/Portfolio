@@ -91,7 +91,7 @@ function DarkMode(){
         s.classList.toggle('black');
     })
     bodybc.classList.toggle('bodybc');
-    h1.classList.add('black')
+    h1.classList.toggle('black')
 
 }
 imgdarkmode.addEventListener('click',DarkMode)       
