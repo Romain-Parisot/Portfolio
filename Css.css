@@ -302,7 +302,7 @@ footer{
     white-space: nowrap;
     color: rgb(212, 139, 27 );
     font-size: 25px;
-    animation: scrolltxt 15s linear infinite;
+    animation: scrolltxt 35s linear infinite;
 }
 
 @keyframes scrolltxt {
