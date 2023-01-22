@@ -19,7 +19,7 @@ let h1=document.querySelector('h1')
 let h2=document.querySelectorAll("h2")
 let h3=document.querySelectorAll("h3")
 let strong=document.querySelectorAll("strong")
-
+let aTxtBotFooter=document.querySelector(".aTxtBotFooter")
 
 
 
@@ -79,7 +79,8 @@ function DarkMode(){
         s.classList.toggle('black');
     })
     bodybc.classList.toggle('bodybc');
-    h1.classList.add('black')
+    h1.classList.toggle('black')
+    aTxtBotFooter.classList.toggle('black')
 
 }
 imgdarkmode.addEventListener('click',DarkMode)       
